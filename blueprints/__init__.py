@@ -20,7 +20,7 @@ CORS(app, origins="http://localhost:3000", allow_headers=[
 
 @app.route("/")
 def hello():
-    return {"status": "OK"}, 200
+    return {"status": "OK by xmush"}, 200
 
 
 # CORS(app)
