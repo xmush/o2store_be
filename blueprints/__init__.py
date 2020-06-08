@@ -18,6 +18,10 @@ CORS(app, origins="http://localhost:3000", allow_headers=[
     supports_credentials=True, intercept_exceptions=False)
 
 
+@app.route("/")
+def hello():
+    return {"status": "OK"}, 200
+
 
 # CORS(app)
 # cors = CORS(app, resources = {
